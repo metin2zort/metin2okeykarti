@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Metin2 Okey Kart Yardımcısı</title>
+<style>
+	body{
+		background-color: #21130d;
+		font-family: sans-serif;
+		color: white;
+	}
+	img{
+		width: auto;
+		height: 100%;
+	}
+
+	.container{
+		max-width: 600px;
+	}
+
+	.active {
+		background-image: url('gray.png') !important;
+     }
+
+	.card-row{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.red-card{
+		text-align: center;
+		color: white;
+		width: 64px;
+		height: 84px;
+		background: no-repeat;
+		background-image: url('red.png');
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 28px;
+		font-weight: 700;
+	}
+	.yellow-card{
+		text-align: center;
+		color: white;
+		width: 64px;
+		height: 84px;
+		background: no-repeat;
+		background-image: url('yellow.png');
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 28px;
+		font-weight: 700;
+	}
+	.blue-card{
+		text-align: center;
+		color: white;
+		width: 64px;
+		height: 84px;
+		background: no-repeat;
+		background-image: url('blue.png');
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 28px;
+		font-weight: 700;
+	}
+
+	.content{
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+	.text{
+		max-width: 600px;
+	}
+	.puanlar{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+
+	.footer{
+		color: white;
+		font-size: 2rem;
+	}
+
+</style>
+
+</head>
+<body>
+
+	<div class="card-row">
+		<div class="red-card" id="card" onclick='toggleGray(this)'>1</div>
+		<div class="red-card" id="card" onclick='toggleGray(this)'>2</div>
+		<div class="red-card" id="card" onclick='toggleGray(this)'>3</div>
+		<div class="red-card" id="card" onclick='toggleGray(this)'>4</div>
+		<div class="red-card" id="card" onclick='toggleGray(this)'>5</div>
+		<div class="red-card" id="card" onclick='toggleGray(this)'>6</div>
+		<div class="red-card" id="card" onclick='toggleGray(this)'>7</div>
+		<div class="red-card" id="card" onclick='toggleGray(this)'>8</div>
+	</div>
+
+	<div class="card-row">
+		<div class="yellow-card" id="card" onclick='toggleGray(this)'>1</div>
+		<div class="yellow-card" id="card" onclick='toggleGray(this)'>2</div>
+		<div class="yellow-card" id="card" onclick='toggleGray(this)'>3</div>
+		<div class="yellow-card" id="card" onclick='toggleGray(this)'>4</div>
+		<div class="yellow-card" id="card" onclick='toggleGray(this)'>5</div>
+		<div class="yellow-card" id="card" onclick='toggleGray(this)'>6</div>
+		<div class="yellow-card" id="card" onclick='toggleGray(this)'>7</div>
+		<div class="yellow-card" id="card" onclick='toggleGray(this)'>8</div>
+	</div>
+
+	<div class="card-row">
+		<div class="blue-card" id="card" onclick='toggleGray(this)'>1</div>
+		<div class="blue-card" id="card" onclick='toggleGray(this)'>2</div>
+		<div class="blue-card" id="card" onclick='toggleGray(this)'>3</div>
+		<div class="blue-card" id="card" onclick='toggleGray(this)'>4</div>
+		<div class="blue-card" id="card" onclick='toggleGray(this)'>5</div>
+		<div class="blue-card" id="card" onclick='toggleGray(this)'>6</div>
+		<div class="blue-card" id="card" onclick='toggleGray(this)'>7</div>
+		<div class="blue-card" id="card" onclick='toggleGray(this)'>8</div>
+	</div>
+
+	<div class="content">
+		<article class="text">
+			<h1>Metin2 Okey Kart Yardımcısı</h1>
+			<p>En sevilen Metin2 etkinliklerinden birisi olan Okey Kart Etkinliği oynaması zevkli ve aynı zamanda sıkıcı bir oyundur. 1'den 8'e kadar kartlar Kırmızı, Mavi ve Sarı olmak üzere destende rastgele dizilmiştir. 5 tane açarak bunlardan 3 tanesini seçersin ve puan elde edersin.</p>
+			<p>Seçtiğin ve attığın kartları takip etmek için yukarıdaki aracı kullan. Her bir kartın üstüne tıklayarak onun rengini değiştir ve kullanılan kartı temsil etmesini sağla.</p>
+			<h2>Okey Kartı Etkinliği Puan Tablosu</h2>
+			<div class="puanlar">
+					<img src="ayni-sayilar.jpg" alt="Aynı Sayılardan Elde edilebilecek Okey Puanı">
+					<img src="ayni-renkler.jpg" alt="Aynı Renklerden Elde edilebilecek Okey Puanı">
+					<img src="ardisik-sayilar.jpg" alt="Ardışık Sayılardan Elde edilebilecek Okey Puanı">
+			</div>
+			<a class="footer" href="https://metin2sv.com/">Metin2 PVP Serverler</a>
+
+		</article>
+	</div>
+
+
+	<script>
+  function toggleGray(element) {
+    element.classList.toggle('active');
+  }
+</script>
+</body>
+</html>
