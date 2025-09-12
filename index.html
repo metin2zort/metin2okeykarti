@@ -17,6 +17,14 @@
 	
 	  gtag('config', 'G-CG3BG72KJE');
 	</script>
+	<script>
+function removeClassFromAllElements(className) {
+  const elements = document.querySelectorAll('.' + className);
+  elements.forEach(element => {
+    element.classList.remove(className);
+  });
+}
+</script>
 <style>
 	body{
 		background-color: #21130d;
@@ -140,6 +148,11 @@
 		<div class="blue-card" id="card" onclick='toggleGray(this)'>8</div>
 	</div>
 
+	<div style="display:grid; text-align:center;">
+		<span>*Atılan veya kullanılan kartı üstüne tıklayarak belirle.</span>
+		<button>Kartları Yenile 🔃</button>
+	</div>
+
 	<div class="content">
 		<article class="text">
 			<h1>Metin2 Okey Kart Etkinliği Yardımcısı</h1>
@@ -156,7 +169,6 @@
 		</article>
 	</div>
 
-
 	<script>
   function toggleGray(element) {
     element.classList.toggle('active');
@@ -169,6 +181,7 @@
 </body>
 
 </html>
+
 
 
 
